@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferienwohnung Muster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Na hör Mal!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <!-- Buchung mit ID für Klick-Event -->
+                <li><a href="#" id="buchung-link">Buchung</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Willkommen in unserer Ferienwohnung!</h2>
+        <p>Genießen Sie einen erholsamen Urlaub in unserer gut ausgestatteten Wohnung.</p>
+        <img src="https://as1.ftcdn.net/v2/jpg/01/00/72/50/1000_F_100725006_krqFhVHR5aTnKFdlfsX88VwQ8Gy3k84L.jpg" alt="Ferienwohnung">
+        
+        <!-- Buchungsformular, zunächst versteckt -->
+        <section id="buchungsbereich" style="display: none;">
+            <form id="buchungsform">
+                <h3>Buchungsformular</h3>
+                <input id="name" type="text" placeholder="Ihr Name" required>
+                <input id="email" type="email" placeholder="Ihre E-Mail" required>
+                <input id="datum" type="date" required>
+                <button type="submit">Buchen</button>
+            </form>
+            <div id="bestätigung"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ferienwohnung Muster</p>
+    </footer>
+
+    <script src="buchung.js" defer></script>
+</body>
+</html>
